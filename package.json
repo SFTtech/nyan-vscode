@@ -1,0 +1,39 @@
+{
+    "name": "nyan",
+    "version": "0.0.1",
+    "publisher": "SFTtech",
+    "license": "LGPL3+",
+    "displayName": "nyan",
+    "description": "nyan language support for Visual Studio Code",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SFTtech/nyan.git"
+    },
+    "bugs": {
+        "url": "https://github.com/SFTtech/nyan/issues"
+    },
+    "homepage": "https://github.com/SFTtech/nyan",
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nyan",
+            "extensions": [".nyan"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nyan",
+            "scopeName": "source.nyan",
+            "path": "./syntaxes/nyan.json"
+        }]
+    }
+}

@@ -1,0 +1,16 @@
+This extension is, like nyan itself, licensed under GNU LGPLv3 or later.
+
+Any file in this project that doesn't state otherwise, and isn't listed as an
+exception below, is Copyright 2018-2018 the nyan authors, and licensed under
+the terms of the GNU Lesser General Public License Version 3, or
+(at your option) any later version ("LGPL3+").
+
+Please see copying.md in [the nyan repository](https://github.com/SFTtech/nyan)
+for a complete and up-to-date list of _the nyan authors_.
+A copy of the license can be found in `legal/LGPLv3`.
+For completeness, a copy of the GPLv3 is included at `legal/GPLv3`.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License Version 3 for more details.

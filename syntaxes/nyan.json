@@ -1,0 +1,72 @@
+{
+	"name": "nyan",
+	"filetypes": ["nyan"],
+	"scopeName": "source.nyan",
+	"uuid": "1539e800-2a26-4696-b49d-5b73663298fb",
+	"patterns": [
+		{
+			"match": "#.*$",
+			"name": "comment.nyan"
+		},
+		{
+			"comment": "Single-quoted string",
+			"begin": "'",
+			"end": "'",
+			"name": "string.quoted.single.nyan",
+			"patterns": [
+				{
+					"match": "\\\\(.|$)",
+					"name": "constant.character.escape.nyan"
+				}
+			]
+		},
+		{
+			"comment": "Double-quoted string",
+			"begin": "\"",
+			"end": "\"",
+			"name": "string.double.nyan",
+			"patterns": [
+				{
+					"match": "\\\\(.|$)",
+					"name": "constant.character.escape.nyan"
+				}
+			]
+		},
+		{
+			"match": "o?\\{|\\}",
+			"name": "constant.language.nyan"
+		},
+		{
+			"match": "\\b(((-|0[xX])[0-9a-fA-F]+)|(-?[0-9]+(\\.[0-9]+)?))\\b",
+			"name": "constant.numeric.nyan"
+		},
+		{
+			"match": "\\.{3}|\\b(pass|import|from|as)\\b",
+			"name": "keyword.control.nyan"
+		},
+		{
+			"match": "\\b((ordered)?set)\\b",
+			"name": "keyword.control.less.nyan"
+		},
+		{
+			"match": "\\b(bool|true|false|int|file|float|text)\\b",
+			"name": "keyword.nyan"
+		},
+		{
+			"match": "\\b(?<=[<(\\[,])([A-Za-z_][A-Za-z0-9_\\.]*)\\b",
+			"name": "entity.name.type.inherited.nyan"
+		},
+		{
+			"match": "\\b([A-Za-z_][A-Za-z0-9_]*)(?=\\()\\b",
+			"name": "entity.name.type.nyan"
+		},
+		{
+			"match": "\\b([A-Za-z_][A-Za-z0-9_]*)(?=<)\\b",
+			"name": "entity.name.function.nyan"
+		},
+		{
+			"match": "\\b([A-Za-z_][A-Za-z0-9_]*)\\b",
+			"name": "variable.nyan"
+		}
+	]
+}
